@@ -12,9 +12,10 @@ static const uint32 RAW_BTN_8    = 0xEA15FF00;
 static const uint32 RAW_BTN_9    = 0xF609FF00;
 static const uint32 RAW_BTN_STAR = 0xE916FF00;
 static const uint32 RAW_BTN_0    = 0xE619FF00;
+static const uint32 RAW_BTN_HASH = 0xF20DFF00;
 static const uint32 RAW_BTN_UP   = 0xE718FF00;
 static const uint32 RAW_BTN_DOWN = 0xAD52FF00;
-static const uint32 RAW_BTN_LEFT = 0xF708FE00;
+static const uint32 RAW_BTN_LEFT = 0xF708FF00;
 static const uint32 RAW_BTN_RIGHT= 0xA55AFF00;
 static const uint32 RAW_BTN_OK   = 0xE31CFF00;
 
@@ -31,6 +32,7 @@ IRButton IRRemoteMap::getButton(uint32 raw) {
     case RAW_BTN_9:    return IRButton::BTN_9;
     case RAW_BTN_STAR: return IRButton::BTN_STAR;
     case RAW_BTN_0:    return IRButton::BTN_0;
+    case RAW_BTN_HASH: return IRButton::BTN_HASH;
     case RAW_BTN_UP:   return IRButton::BTN_UP;
     case RAW_BTN_DOWN: return IRButton::BTN_DOWN;
     case RAW_BTN_LEFT: return IRButton::BTN_LEFT;
@@ -53,6 +55,7 @@ const char* IRRemoteMap::toString(IRButton btn) {
     case IRButton::BTN_9:       return "9";
     case IRButton::BTN_STAR:    return "*";
     case IRButton::BTN_0:       return "0";
+    case IRButton::BTN_HASH:    return "#";
     case IRButton::BTN_UP:      return "UP";
     case IRButton::BTN_DOWN:    return "DOWN";
     case IRButton::BTN_LEFT:    return "LEFT";

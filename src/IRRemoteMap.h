@@ -17,6 +17,7 @@ enum class IRButton : uint8_t {
   BTN_9,
   BTN_STAR,
   BTN_0,
+  BTN_HASH,
   BTN_UP,
   BTN_DOWN,
   BTN_LEFT,
