@@ -40,11 +40,6 @@ IRButton IRRemoteMap::getButton(uint32 raw) {
   }
 }
 
-IRButton IRRemoteMap::fromReceiver() {
-  uint32 raw = (uint32)IrReceiver.decodedIRData.decodedRawData;
-  return getButton(raw);
-}
-
 const char* IRRemoteMap::toString(IRButton btn) {
   switch (btn) {
     case IRButton::BTN_1:       return "1";

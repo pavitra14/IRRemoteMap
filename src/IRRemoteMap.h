@@ -2,7 +2,6 @@
 #define IRREMOTE_MAP_H
 
 #include <Arduino.h>
-#include <IRremote.hpp>
 
 using uint32 = uint32_t;
 
@@ -30,10 +29,6 @@ class IRRemoteMap {
 public:
   // Map the raw 32-bit decoded value to an IRButton
   static IRButton getButton(uint32 raw);
-
-  // Convenience: read from IrReceiver.decodedIRData and return mapped button
-  // Call this after IrReceiver.decode() returns true.
-  static IRButton fromReceiver();
 
   // Return human readable name for the IRButton enum
   static const char* toString(IRButton btn);
