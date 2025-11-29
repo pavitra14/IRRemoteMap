@@ -1,0 +1,22 @@
+{
+  "name": "IRRemoteMap",
+  "version": "1.0.0",
+  "description": "Map raw IR remote codes to friendly button enums and names (convenience helpers for IRremote library).",
+  "keywords": ["ir", "remote", "irremote", "infrared"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavitra14/IRRemoteMap.git"
+  },
+  "authors": [
+    {
+      "name": "Pavitra Behre",
+      "email": "pavitra.behre@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": ["arduino"],
+  "platforms": ["atmelavr", "espressif32", "atmelsam"],
+  "dependencies": {
+    "arduino-libraries/Arduino-IRremote": "*"
+  }
+}
